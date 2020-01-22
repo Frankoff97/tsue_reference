@@ -1,0 +1,117 @@
+                        body {
+                        font-size: 17px;
+                    }
+                    
+                    .informationForm {
+                        width: 70%;
+                        margin: 20px auto;
+                        border-radius: 0px;
+                        padding: 40px 40px 20px 40px;
+                        box-shadow: 0px 0px 70px rgb(109, 106, 109);
+                        transition: 500ms;
+                        /* background: url(./img/tdiu.jpg) no-repeat center; */
+                        /* opacity: .2; */
+                        background: white;
+                    }
+                    
+                    img:last-child {
+                        width: 120px;
+                    }
+                    
+                    img:nth-child(2) {
+                        width: 100px;
+                    }
+                    
+                    .head .back {
+                        height: 70%;
+                        position: absolute;
+                        z-index: -1;
+                        opacity: .2;
+                        /* right: auto; */
+                        top: 20%;
+                        left: 34%;
+                    }
+                    
+                    .head {
+                        /* margin: 20px; */
+                        display: flex;
+                    }
+                    
+                    .qr-code {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    
+                    .title {
+                        margin: auto;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                    
+                    .span {
+                        font-size: 12px;
+                        font-style: italic;
+                        margin-left: 0;
+                    }
+                    
+                    .date {
+                        /* position: absolute; */
+                        margin-right: 20px;
+                        font-weight: 600;
+                        /* display: inline-block; */
+                        text-align: right;
+                    }
+                    
+                    .inform-body {
+                        text-align: justify;
+                    }
+                    
+                    .confirm {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                    
+                    .buttons {
+                        text-align: center;
+                    }
+                    
+                    @media(max-width: 1100px) {
+                        button {
+                            font-size: 10px !important;
+                            margin-left: 5px;
+                        }
+                        .informationForm {
+                            font-size: 10px;
+                            padding: 5;
+                            width: 95%;
+                        }
+                        .span {
+                            font-size: 8px;
+                        }
+                        @media(max-width: 800px) {
+                            .informationForm {
+                                font-size: 10px;
+                                padding: 5;
+                                width: 100%;
+                            }
+                            .span {
+                                font-size: 8px;
+                                top: 10%;
+                                width: 70%;
+                            }
+                            .head .back {
+                                left: auto;
+                                width: 40%;
+                            }
+                        }
+                        @media(max-width: 576px) {
+                            button {
+                                font-size: 8px;
+                            }
+                            .informationForm {
+                                font-size: 8px;
+                            }
+                            .head .back {
+                                margin-left: 10px;
+                            }
+                        }
