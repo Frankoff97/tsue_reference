@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php 
+    session_start(); 
+   $_SESSION['counter']='on';
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,8 +29,10 @@
         
 ?>
     
-
-    
+    <script src="bootstrap-4.4.1-dist/js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/popper.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-4.4.1-dist/js/script.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 150vh;
+    min-height: 120vh;
     background-attachment: fixed;
     position: relative;
     width: 100%;
@@ -37,11 +37,9 @@ a:hover {
 .navbar {
     margin-bottom: 80px;
     justify-content: center;
-    padding-left: 70px;
+    padding-left: 156px;
     text-align: center;
-    background: rgba(22, 114, 235, 0.979);
-    /* background: url(/img/17.jpg) no-repeat center center;
-    background-size: cover; */
+    background: rgba(233, 135, 6, 1);
 }
 
 .navbar a img {
@@ -68,13 +66,19 @@ a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 1);
     transition: 0.5s;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .box:hover {
     transform: scale(1.05);
-    border-radius: 10px;
+    border-radius: 1px;
     box-shadow: 0 0 100px rgba(255, 237, 237, 0.2);
     background: rgb(241, 82, 8);
+}
+
+.box img {
+    width: 50px;
+    height: 60px;
 }
 
 .box p {
@@ -134,7 +138,8 @@ a:hover {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 0;
-    color: rgb(238, 107, 20);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(3, 3, 3)
 }
 
 .search {
@@ -159,7 +164,7 @@ a:hover {
     margin: auto;
     overflow: auto;
     height: auto;
-    background: rgba(37, 113, 211, 0.1);
+    background: rgba(211, 199, 37, 0.1);
     padding-top: 0;
 }
 
@@ -215,6 +220,10 @@ a:hover {
 
 .content a {
     margin-bottom: 10px;
+}
+
+.content a img {
+    width: 30px;
 }
 
 .content p b {
@@ -407,7 +416,78 @@ th {
 }
 
 @media(max-width:576px) {
+    .main {
+        min-height: 50vh;
+    }
     .navbar img {
         width: 60px;
+    }
+    .navbar a img {
+        width: 60px;
+    }
+    .navbar .text {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .navbar p {
+        font-size: 8px;
+        padding-top: 10px;
+    }
+    .navbar {
+        align-items: center;
+        display: flex !important;
+        padding-left: 5px;
+        margin-bottom: 40px;
+    }
+    .box {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .box p {
+        font-size: 10px;
+    }
+    .box span {
+        color: black;
+        font-size: 5px;
+    }
+    .box img {
+        width: 20px;
+        height: 20px;
+    }
+    .tsue {
+        padding-bottom: 5px !important;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .content h2 {
+        font-size: 10px;
+    }
+    .content p {
+        font-size: 8px;
+        margin-bottom: 3px;
+    }
+    .content a {
+        margin-bottom: 3px;
+    }
+    .content a img {
+        width: 20px;
+    }
+    .content span {
+        font-size: 10px;
+    }
+    .qr_rector img {
+        width: 50%;
+    }
+    .contact a {
+        font-size: 10px;
+    }
+    .contact {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .rights p {
+        font-size: 8px;
     }
 }
